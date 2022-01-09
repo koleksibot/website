@@ -1,0 +1,141 @@
+@require '_variables.styl'
+
+// .page
+//   @extend .fade-transition
+
+.toolbar
+  &__title
+    font-size: 28px
+    font-weight: $font-weights.medium
+    margin-top: -0.25em
+  img
+    height: 20px
+
+.expansion-panel
+  &__header:after
+    top: "calc(50% - %s)" % $font-size-root
+
+button.square
+  width: 5 * $font-size-root
+  height: 5 * $font-size-root
+  min-width: initial
+  padding: 0
+
+.spread-the-word
+  a.button
+    text-decoration: none
+
+.video-container
+  position:relative
+  padding-bottom:60%
+  height:0
+  overflow:hidden
+
+
+.video-container iframe, .video-container object, .video-container embed
+  position:absolute
+  top:0
+  left:0
+  width:100%
+  height: 100%;
+
+.main-container
+  padding: 1px
+  .content-area
+    padding-right: 0px
+    padding-left: 0px
+
+// Checkboxes to the right
+.input-group--selection-controls__ripple
+    right: -16px;
+    left: initial;
+
+.input-group--selection-controls label
+    left: 0;
+
+.input-group.input-group--selection-controls .icon
+    right: 8px;
+    left: initial;
+
+.input-group.input-group--selection-controls label
+    max-width: initial;
+
+
+.img-responsive
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+
+.join-form
+  display: block;
+  margin: auto;
+  max-width: 500px;
+
+.expansion-panel__body
+  div.card__text
+    padding-left: 23px;
+
+.carousel
+  height: 320px;
+
+.expansion-panel__body .card__text p:last-child
+  margin-bottom: 0;
+
+.expansion-panel__body .card__text ol:not(last-child),
+.expansion-panel__body .card__text ul:not(last-child)
+  margin-bottom: 1em;
+
+.carousel__controls
+  display:none
+
+// Forms with white--text 
+.application--light 
+  .white--text 
+    .input-group
+      &.input-group--text-field // Adjust margin email field
+        margin-left: 30px;
+        padding-right: 40px;
+      label, .input-group__error, input, textarea
+        color: $white !important
+        caret-color: $white !important
+      label
+        white-space: normal
+        height: auto
+        padding-right: 70px
+        line-height: 25px
+      .input-group__details:before, .input-group__details:after
+        background-color: $white !important
+    .input-group--selection-controls .icon
+      color: $white !important
+
+// parallax customizations
+.parallax
+  &.scrim
+    .parallax__content
+      background: rgba(0, 0, 0, 0.2);
+  &.main-image
+    .parallax__image-container
+      img
+        //transition: none !important // Remove transition to dont delay load
+
+.carousel
+  .btn.theme--light
+    .icon
+      color: $theme.primary
+
+.page-team a, .navigation-bar a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+.btn-language
+  font-size: 16px
+
+.language-selector
+  .list__tile__title
+    text-align: center
+    font-size: 16px
+    a
+      text-decoration: none
+      color: #000

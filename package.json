@@ -1,0 +1,32 @@
+{
+  "name": "neocratia",
+  "version": "1.0.0",
+  "description": "If democracy were to be invented today, what would it be like?",
+  "author": "neocratia.org",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "config": "^1.26.1",
+    "dotenv": "^4.0.0",
+    "firebase": "^4.2.0",
+    "nuxt": "^1.3.0",
+    "nuxt-i18n": "^2.1.0",
+    "promise-polyfill": "^6.0.2",
+    "vue": "latest",
+    "vue-i18n": "^7.4.2",
+    "vue-server-renderer": "latest",
+    "vue-smoothscroll": "^0.1.1",
+    "vue-template-compiler": "latest",
+    "vuetify": "^0.15.7"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-imports": "^1.4.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
+}
